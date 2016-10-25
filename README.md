@@ -9,7 +9,7 @@ This is a Symfony 3 project template used as a Rest(full?) API
 * `php bin/console doctrine:database:create` will create your mysql database (check the symfony configuration)
 * `php bin/console doctrine:schema:create` will create your mysql schema
 * `php bin/console server:run` 
-* Test with http://localhost:8000/datas. You should have an empty array
+* Test with `http://localhost:8000/datas`. You should have an empty array
 
 ## Tips
 * Set the [Symfony var env](https://symfony.com/doc/current/configuration/environments.html#selecting-the-environment-for-console-commands) (SYMFONY_ENV and SYMFONY_DEBUG)
