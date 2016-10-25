@@ -6,6 +6,7 @@ This is a Symfony 3 project template used as a Rest(full?) API
 ## Steps
 * Clone the project
 * cd into the project
+* `composer install`
 * `php bin/console doctrine:database:create` will create your mysql database (check the symfony configuration)
 * `php bin/console doctrine:schema:create` will create your mysql schema
 * `php bin/console server:run` 
