@@ -11,7 +11,7 @@ use Symfony\Component\Debug\Debug;
 // This check prevents access to debug front controllers that are deployed by accident to production servers.
 // Feel free to remove this, extend it, or make something more sophisticated.
 if (isset($_SERVER['HTTP_CLIENT_IP'])
-    || isset($_SERVER['HTTP_X_FORWARDED_FOR'])
+    //|| isset($_SERVER['HTTP_X_FORWARDED_FOR']) commented because of reverse proxy system
     || !(preg_match('/(^(127\.0\.0\.1)$|^(10\.([0-9]){1,3}\.([0-9]){1,3}\.([0-9]){1,3})$|^fe80::1$|^::1$|^(172\.([0-9]){1,3}\.([0-9]){1,3}\.([0-9]){1,3})$|^(192\.168\.([0-9]){1,3}\.([0-9]){1,3})$)/', @$_SERVER['REMOTE_ADDR']) ||
         php_sapi_name() === 'cli-server')
 ) {
